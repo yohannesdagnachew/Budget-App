@@ -23,7 +23,7 @@
 
   <div>
     <%= form.label :group_id, style: "display: block" %>
-    <%= form.select  :group_id, Group.all.collect {|p| [p.name, p.id]} %>
+    <%= form.select  :group_id, groups.all.collect {|p| [p.name, p.id]} %>
   </div>
 
   <div>

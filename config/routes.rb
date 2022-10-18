@@ -2,6 +2,6 @@ Rails.application.routes.draw do
   resources :entities
   resources :groups
   devise_for :users
-  root 'main#index'
+  root "groups#index"
   resources :users
 end

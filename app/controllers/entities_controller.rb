@@ -13,7 +13,7 @@ class EntitiesController < ApplicationController
 
   def new
     @entity = Entity.new
-    @groups = Group.all
+    @groups = current_user.groups
   end
 
  
