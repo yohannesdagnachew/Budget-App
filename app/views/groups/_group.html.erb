@@ -1,11 +1,7 @@
-  <div class="col-md-4">
-    <img src= <%= group.icon %> class="img-fluid rounded-start" alt=<%= group.name %>>
-  </div>
-  <div class="col-md-8">
+  <div class="group-item">
+   <img class="group-image" src= <%= (url_for(group.icon))%> class="img-fluid rounded-start" alt=<%= group.name %>>
     <div class="card-body">
-      <h5 class="card-title"><%= link_to group.name, group_path(group.id) %></h5>
-      <h5><%=current_user.name%></h5>
+      <h5 class="card-title"><%= link_to group.name, group_path(group.id), class: "group-name" %></h5>
        <p class="flex flex-row justify-end w-[70px] font-bold text-black">$<%= group.entities.sum(:Amount)%></p> 
-    </div>
-  </div>
-
+     </div>
+  </div>  

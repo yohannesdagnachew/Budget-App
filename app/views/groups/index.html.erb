@@ -1,12 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Groups</h1>
+<h1 class="group-title">Groups</h1>
 
-<div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
+<div class=" card-list" style="max-width: 640px;">
+  <div class="group">
   <% @groups.each do |group| %>
     <%= render group %>
   <% end %>
  </div>
 </div>
-<%= link_to "Add a new category", new_group_path %>
+<div class="add-catagory">
+<%= link_to "Add a new category", new_group_path, class: "catagory-btn" %>
+</div>
