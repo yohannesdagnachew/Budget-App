@@ -5,7 +5,7 @@ RSpec.describe 'Entities', type: :request do
   before do
     @user = User.create(name: 'Chris siku', password: '123456', email: 'chris@gmail.com')
     @group = Group.create(name: 'Category 1', user_id: 1)
-    @entity = @group.entities.new(name: 'Entity 1', user_id: 1)  
+    @entity = @group.entities.new(name: 'Entity 1', user_id: 1)
     sign_in @user
   end
 

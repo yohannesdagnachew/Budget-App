@@ -15,8 +15,8 @@ RSpec.describe 'Groups', type: :request do
     end
 
     it 'returns http success on root route' do
-        get root_path
-        expect(response).to have_http_status(:success)
-     end
+      get root_path
+      expect(response).to have_http_status(:success)
+    end
   end
 end
