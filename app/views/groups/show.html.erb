@@ -1,0 +1,22 @@
+<p style="color: green"><%= notice %></p>
+<div><%= link_to "Back", groups_path, class: "back" %></div>
+<div class="trans" style="max-width: 540px;">
+<div class="total-tarns">
+<h2>Total</h2>
+<h2><%= @total %></h2>
+</div>
+  <div class="group-transaction">
+  <% @entities.each do |entities| %>
+    <div class="trans-card">
+      <div class="card-body">
+        <h5 class="card-title"><%= entities.name %></h5>
+        <h5><%=entities.Amount%></h5>
+      </div>
+      <p><%= entities.created_at.asctime %></p> 
+    </div>
+  <% end %>
+ </div>
+</div>
+<div class="new-trans">
+<%= link_to "New entity", new_entity_path, class: "new-trans-item" %>
+</div>
