@@ -3,4 +3,5 @@ class Group < ApplicationRecord
     has_many :entities, foreign_key: 'group_id'
 
     has_one_attached :icon
+    validates :name, presence: true
 end
