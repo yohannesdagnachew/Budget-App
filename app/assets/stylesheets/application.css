@@ -2,7 +2,7 @@
   background-color: #3778c2;
 }
 
-.nav-all  {
+.nav-all {
   display: flex !important;
   justify-content: space-between !important;
   gap: 69% !important;
@@ -21,11 +21,11 @@ body {
 }
 
 .intoduction {
-   display: flex; 
-   margin-top: 7%;
-   flex-direction: column;
-   gap: 40px;
-   margin-right: 1.25rem; 
+  display: flex;
+  margin-top: 7%;
+  flex-direction: column;
+  gap: 40px;
+  margin-right: 1.25rem;
 }
 
 .signup-btn {
@@ -45,26 +45,25 @@ body {
 }
 
 .group {
-   display: flex;
-   gap: 30px;
-   flex-direction: column;
-   background-color: #f3f3f3;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  background-color: #f3f3f3;
 }
- 
 
 input {
-    width: 350px;
-    padding: 6px 10px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid;
-    border-radius: 1px;
-    box-sizing: border-box;
+  width: 350px;
+  padding: 6px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 1px;
+  box-sizing: border-box;
 }
 
 .group-image {
-    width: 120px;
-    height: 110px;
+  width: 120px;
+  height: 110px;
 }
 
 .card-list {
@@ -152,10 +151,8 @@ input {
   text-decoration: none;
 }
 
-
 @media only screen and (max-width: 600px) {
-
- .intoduction {
+  .intoduction {
     display: none !important;
   }
 
@@ -172,7 +169,4 @@ input {
     margin-right: auto;
     width: 90%;
   }
-
-  }
-
-
+}
